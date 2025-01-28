@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Typewriter;
+  src: url("//static.showit.co/file/0YNREd92SSGtdqkqRwbmQw/202505/typewriter.woff");
+}
+
+@font-face {
+  font-family: TypewriterBold;
+  src: url("//static.showit.co/file/8eC3k08QTjW819Ldhom-jw/202505/typewriterbold.woff");
+}
+
+@font-face {
+  font-family: EditorsNote Italic;
+  src: url("//static.showit.co/file/VdSFdjRWTruuIQN6HeZmRw/202505/editor_snote-italic.woff");
+}
+
+@font-face {
+  font-family: EditorsNote Regular;
+  src: url("//static.showit.co/file/NsX5UQIJQBqyx6LN7Wjyjw/202505/editor_snote-regular.woff");
+}
+
+svg {
+  @apply inline;
+}
+
+input {
+  @apply bg-transparent outline-none;
+}
+
+.custom_loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #2a324b 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #2a324b);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
